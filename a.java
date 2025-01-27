@@ -1,18 +1,16 @@
-import java.util.*;
+class X {
+    public static void main(String srg[]) {
 
-class X{
-    public static void main(String srg[]){
-
-        String str="PROGRAM";
-        for(int i=0;i<str.length();i++){
+        String str = "PROGRAM";
+        for (int i = 0; i < str.length(); i++) {
             int len = str.length();
-            for(int j=0;j<len;j++){
-                if(i==j || j==len-i-1){
+            for (int j = 0; j < len; j++) {
+                if (i == j || i + j == len - 1) {
                     System.out.print(str.charAt(j));
                 }
-
+                System.out.println();
             }
-            System.out.println();
+
         }
     }
 }
